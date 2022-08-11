@@ -51,7 +51,7 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //localhost:3000
 
 app.get("/soccer", (req, res) => {
-    Tasks.find({}, (err, soccerField) => {
+    Soccer.find({}, (err, soccerField) => {
         res.render(
             "index.ejs",
             {
