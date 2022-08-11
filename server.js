@@ -4,6 +4,7 @@
 const express = require('express');
 const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
+const Soccer = require("./models/schema")
 const app = express ();
 const db = mongoose.connection;
 require('dotenv').config()
@@ -48,9 +49,46 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-});
+
+app.get("/soccer", (req, res) => {
+    Tasks.find({}, (err, soccerField) => {
+        res.render(
+            "index.ejs",
+            {
+                soccer: soccerField
+                
+            }
+            )
+        })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //___________________
 //Listener
