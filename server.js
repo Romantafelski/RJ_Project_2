@@ -62,10 +62,38 @@ app.get("/", (req, res) => {
         })
 })
 
+app.delete("/:id", (req, res) => {
+    Soccer.findByIdAndRemove(req.params.id, (error, data) => {
+      res.redirect("/")
+    })
+})
+
+app.get("/:id/edit", (req, res) => {
+    Soccer.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, updateModel) => {
+        res.redirect("/")
+    })
+})
+
+
+
 app.get("/new", (req, res) => {
     res.render("new.ejs")
 })
 
+app.post("/", (req, res) => {
+  Soccer.create(req.body, (err, createdPlayer) => {
+    res.redirect("/")
+  })
+})
+
+app.get("/:id", (req, res) => {
+    Soccer.findById(req.params.id, (err, foundPlayer) => {
+      res.render(show.ejs, {
+        soccer:foundPlayer
+      })
+    })
+  
+})
 
 
 
