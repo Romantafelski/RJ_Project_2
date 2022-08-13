@@ -6,7 +6,8 @@ const soccerSchema = new mongoose.Schema ({
     weight: {type: String, require: true},
     foot: {type: String, require: true},
     nationality: {type: String, require: true},
-    oldClub: {type: String, require: true}
+    oldClub: {type: String, require: true},
+    number: {type: Number, require: true}
 }, {timestamp: true})
 
 const Soccer = mongoose.model("Soccer", soccerSchema)
