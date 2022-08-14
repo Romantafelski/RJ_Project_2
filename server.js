@@ -91,7 +91,7 @@ app.get("/new", (req, res) => {
 })
 
 
-app.post("/", (req, res) => {
+app.post("/soccer", (req, res) => {
     Soccer.create(req.body, (err, createdPlayer) => {
         res.redirect("/")
     })
