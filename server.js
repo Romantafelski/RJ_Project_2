@@ -87,14 +87,14 @@ app.post("/", (req, res) => {
     })
   })
   
-  app.get("/:id", (req, res) => {
-      Soccer.findById(req.params.id, (err, foundPlayer) => {
-        res.render(show.ejs, {
-          soccer:foundPlayer
-        })
-      })
+//   app.get("/:id", (req, res) => {
+//       Soccer.findById(req.params.id, (err, foundPlayer) => {
+//         res.render(show.ejs, {
+//           soccer:foundPlayer
+//         })
+//       })
     
-  })
+//   })
 
 
 
