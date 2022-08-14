@@ -80,20 +80,7 @@ app.get("/new", (req, res) => {
     res.render("new.ejs")
 })
 
-app.post("/", (req, res) => {
-  Soccer.create(req.body, (err, createdPlayer) => {
-    res.redirect("/")
-  })
-})
 
-app.get("/:id", (req, res) => {
-    Soccer.findById(req.params.id, (err, foundPlayer) => {
-      res.render(show.ejs, {
-        soccer:foundPlayer
-      })
-    })
-  
-})
 
 
 
