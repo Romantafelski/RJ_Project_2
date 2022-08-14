@@ -75,6 +75,14 @@ app.get("/:id/edit", (req, res) => {
 })
 
 
+app.get("/:id", (req, res) => {
+    Soccer.findById(req.params.id, (err, foundPlayer) => {
+      res.render(show.ejs, {
+        soccer:foundPlayer
+      })
+    })
+  
+})
 
 app.get("/new", (req, res) => {
     res.render("new.ejs")
@@ -87,14 +95,6 @@ app.post("/", (req, res) => {
     })
   })
   
-//   app.get("/:id", (req, res) => {
-//       Soccer.findById(req.params.id, (err, foundPlayer) => {
-//         res.render(show.ejs, {
-//           soccer:foundPlayer
-//         })
-//       })
-    
-//   })
 
 
 
