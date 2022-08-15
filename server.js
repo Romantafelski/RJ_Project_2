@@ -58,7 +58,8 @@ app.delete("/:id", (req, res) => {
 })
 
 app.get("/:id/edit", (req, res) => {
-    Tasks.findById(req.params.id, (err, editPlayer) => {
+    Soccer.findById(req.params.id, (err, editPlayer) => 
+    {
         res.render( "edit.ejs", 
         {
             soccer:editPlayer
@@ -87,7 +88,7 @@ app.post("/", (req, res) => {
 })
 
 app.get("/:id", (req, res) => {
-    Tasks.findById(req.params.id, (err, showPlayer) => {
+    Soccer.findById(req.params.id, (err, showPlayer) => {
         res.render("show.ejs", 
         {
             soccer:showPlayer
