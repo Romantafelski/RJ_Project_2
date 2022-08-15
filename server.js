@@ -50,25 +50,14 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 //localhost:3000
 
-app.get("/", (req, res) => {
-    Soccer.find({}, (err, soccerField) => {
-        res.render(
-            "index.ejs",
-            {
-                soccer: soccerField
-                
-            }
-            )
-        })
-})
 
-app.delete("/:_id", (req, res) => {
+app.delete("/:id", (req, res) => {
     Soccer.findByIdAndRemove(req.params.id, (error, data) => {
-      res.redirect("/")
+        res.redirect("/")
     })
 })
 
-app.get("/:_id/edit", (req, res) => {
+app.get("/:id/edit", (req, res) => {
     Tasks.findById(req.params.id, (err, editPlayer) => {
         res.render( "edit.ejs", 
         {
@@ -78,7 +67,7 @@ app.get("/:_id/edit", (req, res) => {
     })
 })
 
-app.put("/:_id", (req, res) => {
+app.put("/:id", (req, res) => {
     Soccer.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
         res.redirect("/")
     })
@@ -97,7 +86,7 @@ app.post("/", (req, res) => {
     })
 })
 
-app.get("/:_id", (req, res) => {
+app.get("/:id", (req, res) => {
     Tasks.findById(req.params.id, (err, showPlayer) => {
         res.render("show.ejs", 
         {
@@ -107,6 +96,17 @@ app.get("/:_id", (req, res) => {
     })
 })
 
+app.get("/", (req, res) => {
+    Soccer.find({}, (err, soccerField) => {
+        res.render(
+            "index.ejs",
+            {
+                soccer: soccerField
+                
+            }
+            )
+        })
+})
 
 
 
