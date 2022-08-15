@@ -23,10 +23,11 @@
       </tr>
       <% for (let i = 0; i < soccer.length; i++) {%> 
       <tr>
-          <td><td><a href="/<%=soccer[i].id; %>/edit">Edit</a></td>
+          <td><td><a href="/soccer/<%=soccer[i].id; %>/edit">Edit</a></td>
           <td></td>
-          <td><a href="/<%= soccer[i].id%> "><%=soccer[i].name %> </a></td>
-          <td><form action="/<%= soccer[i].id %>?_method=DELETE" method=="POST"></form>
+          <td><a href="/soccer/<%= soccer[i].id%> "><%=soccer[i].name %> </a></td>
+          <td><form action="/<%= soccer[i].id %>?_method=DELETE" method=="POST">
+          <input type="submit" value="DELETE"></form>
           </td>
       </tr> 
     <% } %>
