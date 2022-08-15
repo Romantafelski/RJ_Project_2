@@ -21,7 +21,16 @@
           <td>Nationality</td>
           <td>Previous Club</td>
       </tr>
+      <% for (let i = 0; i < soccer.length; i++) {%> 
+      <tr>
+          <td><td><a href="/<%=soccer[i].id; %>/edit">Edit</a></td>
+          <td></td>
+          <td><a href="/<%= soccer[i].id%> "><%=soccer[i].name %> </a></td>
+          <td><form action="/<%= soccer[i].id %>?_method=DELETE" method=="POST"></form>
+          </td>
+      </tr> 
+    <% } %>
   </table>
-  <a class="button" href="/new">Create New Task</a>
+  <a class="button" href="/new">Add new player</a>
 </body>
 </html>
