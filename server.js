@@ -62,13 +62,13 @@ app.get("/", (req, res) => {
         })
 })
 
-app.delete("/:id", (req, res) => {
+app.delete("/:_id", (req, res) => {
     Soccer.findByIdAndRemove(req.params.id, (error, data) => {
       res.redirect("/")
     })
 })
 
-app.get("/:id/edit", (req, res) => {
+app.get("/:_id/edit", (req, res) => {
     Tasks.findById(req.params.id, (err, editPlayer) => {
         res.render( "edit.ejs", 
         {
@@ -78,7 +78,7 @@ app.get("/:id/edit", (req, res) => {
     })
 })
 
-app.put("/:id", (req, res) => {
+app.put("/:_id", (req, res) => {
     Soccer.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
         res.redirect("/")
     })
@@ -97,7 +97,7 @@ app.post("/", (req, res) => {
     })
 })
 
-app.get("/:id", (req, res) => {
+app.get("/:_id", (req, res) => {
     Tasks.findById(req.params.id, (err, showPlayer) => {
         res.render("show.ejs", 
         {
