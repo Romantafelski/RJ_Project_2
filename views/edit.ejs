@@ -8,9 +8,19 @@
 </head>
 <body>
     <div class = "container">
-        <h1>Trying out</h1>
-        <form action="//<%=soccer.id%> ?_method=PUT" method="POST">
-        <input type: "submit" name = "" value = "Confirm edit"
+        <h1>Enter Substitutes Informaiton</h1>
+        <form action="/<%=tasks.id%>?_method=PUT" method="POST">
+            <input type="text" placeholder="Name" name ="name"value="<%=soccer.name%>"/><br/>
+            <input type="text" placeholder="Height" name ="height"value="<%=soccer.height%>"/><br/>
+            <input type="text" placeholder="Weight" name ="weight"value="<%=soccer.weight%>"/><br/>
+            <input type="text" placeholder="Dominant Foot" name ="foot"value="<%=soccer.foot%>"/><br/>
+            <input type="text" placeholder="Nationality" name ="nationality"value="<%=soccer.nationality%>"/><br/>
+            <input type="text" placeholder="Previous Club" name ="oldClub"value="<%=soccer.oldClub%>"/><br/>
+            <input type="text" placeholder="Position" name ="position"value="<%=soccer.position%>"/><br/>
+            <input type="text" placeholder="Number" name ="number"value="<%=soccer.number%>"/><br/>
+            <input type="submit" name="" value="Submit Changes"><br>\
+        </form>
+            <a class = "button" href="/tasks" >Substitute player</a>
     </div>
 </body>
 </html>
