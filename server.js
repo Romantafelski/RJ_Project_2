@@ -64,7 +64,7 @@ app.get("/", (req, res) => {
 
 app.delete("/:id", (req, res) => {
     Soccer.findByIdAndRemove(req.params.id, (error, data) => {
-      res.redirect("/soccer")
+      res.redirect("/")
     })
 })
 
