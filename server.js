@@ -64,7 +64,7 @@ app.get("/", (req, res) => {
 
 app.delete("/:id", (req, res) => {
     Soccer.findByIdAndRemove(req.params.id, (error, data) => {
-      res.redirect("/")
+      res.redirect("/soccer")
     })
 })
 
@@ -101,7 +101,7 @@ app.get("/:id", (req, res) => {
     Tasks.findById(req.params.id, (err, showPlayer) => {
         res.render("show.ejs", 
         {
-            tasks:showPlayer
+            soccer:showPlayer
         }
         )
     })
