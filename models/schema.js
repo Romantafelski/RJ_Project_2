@@ -7,6 +7,7 @@ const soccerSchema = new mongoose.Schema ({
     foot: {type: String, require: true},
     nationality: {type: String, require: true},
     oldClub: {type: String, require: true},
+    position: {type: String, require: true},
     number: {type: Number, require: true}
 }, {timestamp: true})
 
