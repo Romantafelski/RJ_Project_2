@@ -8,9 +8,9 @@
     <title>Edit</title>
 </head>
 <body>
-        <div>
-            <h1>Enter Substitutes Informaiton</h1>
-            <form action="/<%=soccer.id%>?_method=PUT" method="POST" class="createEdit">
+    <h1>Enter Substitutes Informaiton</h1>
+    <form action="/<%=soccer.id%>?_method=PUT" method="POST">
+        <div class="createEdit">
                 <input type="text" placeholder="Name" name ="name"value="<%=soccer.name%>"/><br/>
                 <input type="text" placeholder="Height" name ="height"value="<%=soccer.height%>"/><br/>
                 <input type="text" placeholder="Weight" name ="weight"value="<%=soccer.weight%>"/><br/>
@@ -20,8 +20,8 @@
                 <input type="text" placeholder="Position" name ="position"value="<%=soccer.position%>"/><br/>
                 <input type="text" placeholder="Number" name ="number"value="<%=soccer.number%>"/><br/>
                 <input type="submit" name="" value="Substitute in"><br>
-            </form>
+            </div>
+        </form>
                 <a class = "button" href="/" >Keep player in</a>
-        </div>
 </body>
 </html>
