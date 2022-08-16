@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Edit</title>
 </head>
-<body class="edit">
+<body class="createEdit">
         <div>
             <h1>Enter Substitutes Informaiton</h1>
             <form action="/<%=soccer.id%>?_method=PUT" method="POST">
@@ -19,9 +19,9 @@
                 <input type="text" placeholder="Previous Club" name ="oldClub"value="<%=soccer.oldClub%>"/><br/>
                 <input type="text" placeholder="Position" name ="position"value="<%=soccer.position%>"/><br/>
                 <input type="text" placeholder="Number" name ="number"value="<%=soccer.number%>"/><br/>
-                <input type="submit" name="" value="Submit Changes"><br>
+                <input type="submit" name="" value="Substitute in"><br>
             </form>
-                <a class = "button" href="/" >Substitute player</a>
+                <a class = "button" href="/" >Keep player in</a>
         </div>
 </body>
 </html>
