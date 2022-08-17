@@ -25,7 +25,7 @@ input {
 }
 .details {
     background-image: url(https://www.stirlingsoccer.ca/assets/img/Vector_20180612_018-banner.jpg);
-    background-size:125%;
+    background-size:50em 50em;
     color: white;
 }
 h3 {
