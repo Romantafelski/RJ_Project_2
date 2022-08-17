@@ -12,8 +12,8 @@
   <table>
       <% for (let i = 0; i < soccer.length; i++) {%> 
       <tr>
-          <td class="button"><button><a href="/<%=soccer[i].id; %>/edit">Edit</a></button></td>
-          <td class="player"><a href="/<%= soccer[i].id%> "><%=soccer[i].name %> </a></td>
+          <td><button><a class="button" href="/<%=soccer[i].id; %>/edit">Edit</a></button></td>
+          <td"><a class="player" href="/<%= soccer[i].id%> "><%=soccer[i].name %> </a></td>
           <td>
             <form action="/<%= soccer[i].id %>?_method=DELETE" method="POST">
               <input type="submit" value="DELETE"> 
