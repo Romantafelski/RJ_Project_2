@@ -21,13 +21,10 @@ input {
     text-align: center;
 }
 .button {
-    color: white;
+    color: black;
     font-size: large;
     display: flex;
     justify-content: center;
     text-decoration: none;
-    background-color: aliceblue;
-    border-radius: 75%;
-    height: 4em;
-    width: 10em;
+   
 }
