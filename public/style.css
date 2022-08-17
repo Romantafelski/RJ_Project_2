@@ -59,3 +59,7 @@ table {
     top: 4.75;
     left: 13.7;
 }
+.players {
+    color: black;
+    text-decoration: none;
+}
