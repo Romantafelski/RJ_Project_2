@@ -20,9 +20,9 @@ input {
     color: white;
     text-align: center;
 }
-button {
+.button {
     color: black;
-    font-size: large;
+    font-size: 200em;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
