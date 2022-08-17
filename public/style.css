@@ -28,3 +28,6 @@ input {
     background-size:125%;
     color: white;
 }
+h3 {
+    text-decoration: underline;
+}
