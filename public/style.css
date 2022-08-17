@@ -40,9 +40,5 @@ h3 {
 }
 .home {
     background-image: url(https://i.stack.imgur.com/CjJCu.png);
-    background-size: 50em 50em;
-}
-.table {
-    display: flex;
-    justify-content: center;
+    background-size: 51em 58em;
 }
