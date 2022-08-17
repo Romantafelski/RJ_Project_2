@@ -23,7 +23,6 @@ input {
 button {
     color: black;
     font-size: large;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+   position: absolute;
+   top: 100em;
 }
