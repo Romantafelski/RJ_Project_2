@@ -9,19 +9,19 @@
 </head>
 <body class="home">
   <h3>Home Team</h3>
-  <table class="table">
+  <table>
       <% for (let i = 0; i < soccer.length; i++) {%> 
       <tr>
-          <td><button><a href="/<%=soccer[i].id; %>/edit">Edit</a></button></td>
-          <td"><a class="table" href="/<%= soccer[i].id%> "><%=soccer[i].name %> </a></td>
+          <td><a href="/<%=soccer[i].id; %>/edit">Edit</a></td>
+          <td><a href="/<%= soccer[i].id%> "><%=soccer[i].name %> </a></td>
           <td>
             <form action="/<%= soccer[i].id %>?_method=DELETE" method="POST">
-              <input class="button" type="submit" value="DELETE"> 
+              <input type="submit" value="DELETE"> 
            </form>
           </td>
       </tr> 
     <% } %>
   </table>
-  <button><a class="button" href="/new">Add new player</a></button>
+  <a class="button" href="/new">Add new player</a>
 </body>
 </html>
