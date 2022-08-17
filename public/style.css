@@ -28,5 +28,6 @@ input {
     text-decoration: none;
     background-color: aliceblue;
     border-radius: 75%;
-    background-size: auto;
+    height: 2em;
+    width: 2em;
 }
