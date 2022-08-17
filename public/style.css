@@ -39,7 +39,7 @@ h3 {
 }
 .home {
     background-image: url(https://i.stack.imgur.com/CjJCu.png);
-    background-size: 69em 43em;
+    background-size: 61em 47em;
 }
 .editButton {
     text-decoration: none;
@@ -47,5 +47,5 @@ h3 {
     color: black;
 }
 .deleteButton {
-    font-size: 1.2em;
+    font-size: .5em;
 }
