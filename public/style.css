@@ -55,7 +55,7 @@ table {
     left: 13.7em;
 }
 .homeTeam {
-    position: relative;
+    position: fixed;
     top: 4.75;
     left: 13.7;
 }
