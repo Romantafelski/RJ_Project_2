@@ -38,7 +38,9 @@ h3 {
     text-decoration: none;
     color: black;
     font-size: 1em;
+    text-decoration: none;
 }
 .home {
     background-image: url(https://i.stack.imgur.com/CjJCu.png);
+    background-size: 100%;
 }
