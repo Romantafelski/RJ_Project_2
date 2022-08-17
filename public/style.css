@@ -25,4 +25,6 @@ input {
 }
 .details {
     background-image: url(https://ak.picdn.net/shutterstock/videos/1064470759/thumb/1.jpg?ip=x480);
+    background-size: 100%;
+    color: white;
 }
