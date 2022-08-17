@@ -22,7 +22,7 @@ input {
 }
 .button {
     color: black;
-    font-size: 200em;
+    font-size: large;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
