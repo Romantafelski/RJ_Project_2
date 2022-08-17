@@ -49,3 +49,8 @@ h3 {
 .deleteButton {
     font-size: .9em;
 }
+table {
+    position: relative;
+    top: 20em;
+    left: 40em;
+}
