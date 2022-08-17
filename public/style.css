@@ -37,5 +37,8 @@ h3 {
 .player {
     text-decoration: none;
     color: black;
-    font-size: 3em;
+    font-size: 1em;
+}
+.home {
+    background-image: url(https://i.stack.imgur.com/CjJCu.png);
 }
