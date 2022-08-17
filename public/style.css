@@ -24,5 +24,6 @@ button {
     color: black;
     font-size: large;
    position: absolute;
-   top: 100em;
+   top: 30em;
+   left: 40em;
 }
