@@ -25,4 +25,7 @@ input {
     font-size: large;
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 75%;
 }
