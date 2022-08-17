@@ -4,14 +4,12 @@
     z-index: -1;
 }
 .form {
-    color: black;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     column-gap: 2em;
-    text-decoration: none;
 }
 input {
     font-size: large;
@@ -19,4 +17,7 @@ input {
 .subInfo {
     color: white;
     text-align: center;
+}
+.button {
+    color: aqua;
 }
