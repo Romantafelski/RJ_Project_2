@@ -25,7 +25,7 @@ input {
 }
 .details {
     background-image: url(https://www.stirlingsoccer.ca/assets/img/Vector_20180612_018-banner.jpg);
-    background-size:50em 50em;
+    background-size:125%;
     color: white;
 }
 h3 {
@@ -37,12 +37,10 @@ h3 {
 .player {
     text-decoration: none;
     color: black;
-    font-size: 1.5em;
-    text-decoration: none;
 }
 .home {
     background-image: url(https://i.stack.imgur.com/CjJCu.png);
-    background-size: 125%;
+    background-size: 50em 50em;
 }
 .table {
     display: flex;
