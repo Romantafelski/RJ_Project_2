@@ -39,7 +39,7 @@ h3 {
 }
 .home {
     background-image: url(https://i.stack.imgur.com/CjJCu.png);
-    background-size: 65.1em 48.45em;
+    background-size: 65em 49.85em;
 }
 .editButton {
     text-decoration: none;
@@ -52,5 +52,10 @@ h3 {
 table {
     position: relative;
     top: 5em;
-    left: 13.5em;
+    left: 13.7em;
+}
+.homeTeam {
+    position: relative;
+    top: 4.75;
+    left: 13.7;
 }
