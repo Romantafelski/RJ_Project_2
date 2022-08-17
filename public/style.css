@@ -44,3 +44,7 @@ h3 {
     background-image: url(https://i.stack.imgur.com/CjJCu.png);
     background-size: 125%;
 }
+table {
+    display: flex;
+    justify-content: center;
+}
