@@ -34,4 +34,11 @@ h3 {
 .name {
     text-decoration: underline;
 }
-
+.player {
+    text-decoration: none;
+    color: black;
+}
+.home {
+    background-image: url(https://i.stack.imgur.com/CjJCu.png);
+    background-size: 56em 56em;
+}
