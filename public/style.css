@@ -27,6 +27,11 @@ input {
     background-size:125%;
     color: white;
 }
+.homeTeam {
+    position: relative;
+    top: 4.75;
+    left: 13.75;
+}
 h3 {
     text-decoration: underline;
 }
@@ -53,11 +58,6 @@ table {
     position: relative;
     top: 5em;
     left: 13.7em;
-}
-.homeTeam {
-    position: fixed;
-    top: 4.75;
-    left: 13.7;
 }
 .players {
     color: black;
