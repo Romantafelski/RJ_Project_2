@@ -38,6 +38,7 @@ input {
     top: 3em;
     right: 16.7em;
     color: black;
+    text-decoration: underline;
 }
 .h3 {
     text-decoration: underline;
@@ -81,4 +82,5 @@ ul {
     position: fixed;
     top: 13em;
     right: 23.5em;
+    list-style: none;
 }
