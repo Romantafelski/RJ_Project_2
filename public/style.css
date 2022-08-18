@@ -36,7 +36,7 @@ input {
 .awayTeam {
     position: fixed;
     top: 3em;
-    right: 16.7em;
+    right: 16em;
     color: black;
     text-decoration: underline;
 }
@@ -81,6 +81,7 @@ ul {
     color: black;
     position: fixed;
     top: 13em;
-    right: 23.5em;
+    right: 23em;
     list-style: none;
+    padding: 1em;
 }
