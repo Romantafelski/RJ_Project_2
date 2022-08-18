@@ -29,8 +29,9 @@ input {
 }
 .homeTeam {
     position: fixed;
-    top: 5em;
-    left: 10em;
+    top: 5.2em;
+    left: 11em;
+    text-decoration: underline;
 }
 .h3 {
     text-decoration: underline;
