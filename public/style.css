@@ -33,6 +33,12 @@ input {
     left: 16.7em;
     text-decoration: underline;
 }
+.awayTeam {
+    position: fixed;
+    top: 3em;
+    right: 16.7em;
+    color: black;
+}
 .h3 {
     text-decoration: underline;
 }
@@ -59,6 +65,7 @@ table {
     position: fixed;
     top: 13em;
     left: 23.5em;
+    text-align: center;
 }
 .players {
     color: black;
@@ -68,4 +75,10 @@ table {
     position: fixed;
     top: 2em;
     left: 2em;
+}
+ul {
+    color: black;
+    position: fixed;
+    top: 13em;
+    right: 23.5em;
 }
