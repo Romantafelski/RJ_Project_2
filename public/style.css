@@ -29,8 +29,8 @@ input {
 }
 .team {
     position: fixed;
-    top: 4;
-    left: 13.75;
+    top: 12.5;
+    left: 14.5;
 }
 .h3 {
     text-decoration: underline;
@@ -56,8 +56,8 @@ input {
 }
 table {
     position: fixed;
-    top: 5em;
-    left: 13.7em;
+    top: 13em;
+    left: 14.5em;
 }
 .players {
     color: black;
