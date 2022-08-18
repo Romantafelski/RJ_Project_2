@@ -30,7 +30,7 @@ input {
 .homeTeam {
     position: fixed;
     top: 3em;
-    left: 11.55em;
+    left: 19em;
     text-decoration: underline;
 }
 .h3 {
@@ -45,7 +45,7 @@ input {
 }
 .home {
     background-image: url(https://i.stack.imgur.com/CjJCu.png);
-    background-size: 90em 49.85em;
+    background-size: 89em 49.85em;
 }
 .editButton {
     text-decoration: none;
@@ -58,7 +58,7 @@ input {
 table {
     position: fixed;
     top: 13em;
-    left: 15em;
+    left: 20em;
 }
 .players {
     color: black;
