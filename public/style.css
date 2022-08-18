@@ -81,7 +81,9 @@ ul {
     color: black;
     position: fixed;
     top: 13em;
-    right: 23em;
+    right: 21em;
     list-style: none;
+}
+li {
     padding: 1em;
 }
