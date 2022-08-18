@@ -30,7 +30,7 @@ input {
 .homeTeam {
     position: fixed;
     top: 3em;
-    left: 17em;
+    left: 16.3em;
     text-decoration: underline;
 }
 .h3 {
@@ -58,7 +58,7 @@ input {
 table {
     position: fixed;
     top: 13em;
-    left: 22em;
+    left: 24em;
 }
 .players {
     color: black;
